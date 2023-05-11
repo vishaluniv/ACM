@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 400;
+      height: 100%;
+    }
+    .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      margin-top: 30px;
+    }
+    .container-fluid {
+  background-image: url('v.jpg');
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 500px; /* Change this value as needed */
+  padding-top: 100px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container img {
+  max-height: 400px;
+  border-radius: 10px;
+}
+
+
+
+.drink-title {
+  margin-top: 1.5rem;
+  font-size: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.drink-price {
+  font-size: 1.2rem; /* Change this value as needed */
+  margin-top: 0.5rem; /* Change this value as needed */
+}
+
+.drink-description {
+  font-size: 1rem; /* Change this value as needed */
+  margin-top: 0.2rem; /* Change this value as needed */
+}
+
+.drink-image {
+  width: 1000px; /* Change this value as needed */
+  height: 1000px; /* Change this value as needed */
+  object-fit: cover;
+  border-radius: 10px; /* Change this value as needed */
+}
+
+.container .content {
+  width: 60%;
+}
+
+.container .content h3 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.container .content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+    .arrow-buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000;
+      font-size: 24px;
+      margin-top: 300px;
+      cursor: pointer;
+    }
+    .arrow-buttons:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    .arrow-buttons.left {
+      left: 20px;
+    }
+    .arrow-buttons.right {
+      right: 20px;
+    }
+    .order-button {
+      display: block;
+      margin: 50px auto;
+      width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .order-button:hover {
+      background-color: #0062cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="title">Menu</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <button class="arrow-buttons left"><</button>
+      </div>
+      <div class="col-8">
+        <!-- Add menu items here -->
+      </div>
+      <div class="col-2">
+        <button class="arrow-buttons right">></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="container">
+          <div class="content">
+            <h3 class="drink-title">Drink Title</h3>
+            <p class="drink-price">$4.99</p>
+            <div style="margin-top: 20px; margin-bottom: 20px;" class="drink-info">
+              <table class="nutritional-info">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alcohol %: </td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>Ingredients:  </td>
+                    <td> Vodka, Orange Juice, Cranberry Juice</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>   
+            <p class="drink-description">Description of the drink</p>
+          </div>
+          <img src="p.jpg" alt="Drink" class="img-fluid drink-image">        
+        </div>
+        <button class="order-button">Order</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Link to Bootstrap JS (for optional functionality) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
