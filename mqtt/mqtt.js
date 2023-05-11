@@ -18,7 +18,7 @@ const Pressure = require('./models/pressure');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://vishal4855be21:bTCI2h9yY3lJnRl2@cluster0.bvvimlw.mongodb.net/myFirstDatabase', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://deepali4843be21:KSz7kRnUi5zl8nUx@cluster0.zzg5loc.mongodb.net/myFirstDatabase', {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(helmet({
   contentSecurityPolicy: {
